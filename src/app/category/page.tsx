@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const CategoryPage = async ({ searchParams }: { searchParams: any }) => {
   const urlParams = new URLSearchParams(searchParams);
 
-  let data = await fetch(`/api/category?${urlParams}`, {
+  let data = await fetch(`${process.env.URL}/api/category?${urlParams}`, {
     next: { revalidate: 0, tags: ["fetchProducts"] },
   });
   let { products, currentPage, totalPages, totalItems } = await data.json();
