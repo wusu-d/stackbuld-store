@@ -4,9 +4,10 @@ import { Plus, Minus } from "lucide-react";
 import DeleteProduct from "@/components/DeleteProduct/DeleteProduct";
 import EditProduct from "@/components/EditProduct/EditProduct";
 import NavigationText from "@/components/NavigationText/NavigationText";
+import formatToCurrency from "@/helper/formatNumber";
 
 const ProductPage = async ({ params }: { params: { id: string } }) => {
-  const response = await fetch(`/api/category/${params.id}`, {
+  const response = await fetch(`${process.env.URL}/api/category/${params.id}`, {
     next: { revalidate: 0 },
   });
   const [product] = await response.json();
@@ -71,7 +72,7 @@ const ProductPage = async ({ params }: { params: { id: string } }) => {
 
             {/* price */}
             <p className="text-xl md:text-2xl font-extrabold">
-              ₦{product.price}
+              {formatToCurrency(product.price)}
             </p>
 
             {/* quantity */}

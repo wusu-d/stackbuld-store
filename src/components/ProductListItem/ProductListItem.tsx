@@ -1,3 +1,4 @@
+import formatToCurrency from "@/helper/formatNumber";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,7 +19,7 @@ const ProductListItem: React.FC<{
       </div>
       <h2 className="font-bold text-sm">{name}</h2>
       <p className="text-xs truncate">{desc}</p>
-      <p className="font-bold">N{price.toString()}.00</p>
+      <p className="font-bold">{formatToCurrency(parseInt(price))}</p>
       <p></p>
     </Link>
   );
