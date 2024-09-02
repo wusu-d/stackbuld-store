@@ -51,7 +51,7 @@ const DeleteProduct = ({ id }: { id: string }) => {
             Are you sure
             <CircleX className="w-5 h-5 cursor-pointer" onClick={closeModal} />
           </h1>
-          <p className="text-sm mt-2">This action can&aos;t be reversed</p>
+          <p className="text-sm mt-2">This action can&apos;t be reversed</p>
           <div className="mt-4 space-x-4">
             <button
               onClick={closeModal}

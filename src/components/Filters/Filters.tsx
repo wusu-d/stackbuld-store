@@ -21,7 +21,7 @@ const Filters = ({ activeCat }: { activeCat: string }) => {
   useEffect(() => {
     if (searchParams.size === 0) setActiveCategory("All");
   }, []);
-  
+
   const handleCategoryChange = (category: string) => {
     setActiveCategory(category);
     const params = new URLSearchParams(searchParams);
@@ -63,21 +63,23 @@ const Filters = ({ activeCat }: { activeCat: string }) => {
           <div>
             <label className="text-xs block mb-1">Min Price:</label>
             <input
-              className="w-28 px-2 border border-black rounded-xl "
+              className="w-28 px-2 border border-black rounded-xl placeholder:text-xs"
               type="number"
               name="min"
               min={0}
+              placeholder="Min Price"
               onChange={handleInputChange}
             />
           </div>
           <div>
             <label className="text-xs block mb-1">Max Price:</label>
             <input
-              className="w-28 px-2 border border-black rounded-xl "
+              className="w-28 px-2 border border-black rounded-xl placeholder:text-xs"
               type="number"
               name="max"
               min={0}
               max={100000}
+              placeholder="Max Price"
               onChange={handleInputChange}
             />
           </div>
