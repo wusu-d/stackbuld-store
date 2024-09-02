@@ -5,19 +5,11 @@ import DeleteProduct from "@/components/DeleteProduct/DeleteProduct";
 import EditProduct from "@/components/EditProduct/EditProduct";
 import NavigationText from "@/components/NavigationText/NavigationText";
 
-// import { Button } from "@/components/ui/button"
-// import { Card, CardContent } from "@/components/ui/card"
-// import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-
 const ProductPage = async ({ params }: { params: { id: string } }) => {
-  const response = await fetch(
-    `http://localhost:3000/api/category/${params.id}`,
-    { next: { revalidate: 0 } }
-  );
+  const response = await fetch(`/api/category/${params.id}`, {
+    next: { revalidate: 0 },
+  });
   const [product] = await response.json();
-
-  // const [quantity, setQuantity] = useState(1);
-  // const [activeImage, setActiveImage] = useState(0);
 
   return (
     <main>
