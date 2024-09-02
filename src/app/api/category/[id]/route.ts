@@ -8,7 +8,7 @@ const db = {
   },
 };
 
-export async function GET(response: Response, context: any) {
+export async function GET(request: Request, context: any) {
   const { params } = context;
   const product = db.products.filter(
     (product) => product.id.toString() === params.id
