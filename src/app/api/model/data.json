@@ -1,0 +1,484 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "T-Shirt",
+      "price": 15000,
+      "image": "/images/mens-tshirt.jpg",
+      "desc": "Comfortable and stylish t-shirt for everyday wear.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 2,
+      "name": "Hoodie",
+      "price": 22000,
+      "image": "/images/mens-hoodie.jpg",
+      "desc": "Warm and cozy hoodie for cooler days.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 3,
+      "name": "Jeans",
+      "price": 32000,
+      "image": "/images/mens-jeans.jpg",
+      "desc": "Classic denim jeans with a modern fit.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 4,
+      "name": "Jerseys",
+      "price": 27000,
+      "image": "/images/mens-dress-shirt.jpg",
+      "desc": "rep your favorite club.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 5,
+      "name": "Chinos",
+      "price": 29000,
+      "image": "/images/mens-chinos.jpg",
+      "desc": "Versatile chinos suitable for both casual and semi-formal wear.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 6,
+      "name": "Men's Jacket",
+      "price": 35000,
+      "image": "/images/mens-jacket.jpg",
+      "desc": "Stylish jacket to keep you warm and trendy.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 7,
+      "name": "Polo Shirt",
+      "price": 18000,
+      "image": "/images/mens-polo-shirt.jpg",
+      "desc": "Casual polo shirt with a comfortable fit.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 8,
+      "name": "Men's Sweater",
+      "price": 25000,
+      "image": "/images/mens-sweater.jpg",
+      "desc": "Soft and warm sweater for layering.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 9,
+      "name": "Men's Shorts",
+      "price": 16000,
+      "image": "/images/mens-shorts.jpg",
+      "desc": "Casual shorts ideal for hot weather.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 10,
+      "name": "Suit",
+      "price": 49000,
+      "image": "/images/mens-suit.jpg",
+      "desc": "Elegant suit for formal and professional settings.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 11,
+      "name": "Smartphone",
+      "price": 45000,
+      "image": "/images/smartphone.jpg",
+      "desc": "High-performance smartphone with a sleek design.",
+      "category": "Electronics"
+    },
+    {
+      "id": 12,
+      "name": "Home Theatres",
+      "price": 75000,
+      "image": "/images/laptop.jpg",
+      "desc": "Powerful laptop suitable for work and play.",
+      "category": "Electronics"
+    },
+    {
+      "id": 13,
+      "name": "Headphones",
+      "price": 22000,
+      "image": "/images/headphones.jpg",
+      "desc": "Noise-canceling headphones for an immersive experience.",
+      "category": "Electronics"
+    },
+    {
+      "id": 14,
+      "name": "Smartwatch",
+      "price": 32000,
+      "image": "/images/smartwatch.jpg",
+      "desc": "Stylish smartwatch with fitness tracking features.",
+      "category": "Electronics"
+    },
+    {
+      "id": 15,
+      "name": "Tablet",
+      "price": 35000,
+      "image": "/images/tablet.jpg",
+      "desc": "Versatile tablet with a high-resolution display.",
+      "category": "Electronics"
+    },
+    {
+      "id": 16,
+      "name": "Bluetooth Speaker",
+      "price": 28000,
+      "image": "/images/bluetooth-speaker.jpg",
+      "desc": "Portable speaker with excellent sound quality.",
+      "category": "Electronics"
+    },
+    {
+      "id": 17,
+      "name": "Digital Camera",
+      "price": 65000,
+      "image": "/images/digital-camera.jpg",
+      "desc": "High-resolution camera for capturing stunning photos.",
+      "category": "Electronics"
+    },
+    {
+      "id": 18,
+      "name": "Smart TV",
+      "price": 90000,
+      "image": "/images/smart-tv.jpg",
+      "desc": "Large smart TV with 4K resolution and streaming capabilities.",
+      "category": "Electronics"
+    },
+    {
+      "id": 19,
+      "name": "Gaming Console",
+      "price": 55000,
+      "image": "/images/gaming-console.jpg",
+      "desc": "Next-gen gaming console with advanced features.",
+      "category": "Electronics"
+    },
+    {
+      "id": 20,
+      "name": "External Hard Drive",
+      "price": 24000,
+      "image": "/images/external-hard-drive.jpg",
+      "desc": "Reliable external hard drive for extra storage space.",
+      "category": "Electronics"
+    },
+    {
+      "id": 21,
+      "name": "Basic Laptop",
+      "price": 12000,
+      "image": "/images/basic-laptop.jpg",
+      "desc": "Affordable laptop for everyday tasks and basic computing.",
+      "category": "Laptops"
+    },
+    {
+      "id": 22,
+      "name": "Ultrabook",
+      "price": 45000,
+      "image": "/images/ultrabook.jpg",
+      "desc": "Lightweight ultrabook with long battery life and fast performance.",
+      "category": "Laptops"
+    },
+    {
+      "id": 23,
+      "name": "Gaming Laptop",
+      "price": 75000,
+      "image": "/images/gaming-laptop.jpg",
+      "desc": "High-performance gaming laptop with advanced graphics capabilities.",
+      "category": "Laptops"
+    },
+    {
+      "id": 24,
+      "name": "Business Laptop",
+      "price": 55000,
+      "image": "/images/business-laptop.jpg",
+      "desc": "Robust business laptop with enhanced security features.",
+      "category": "Laptops"
+    },
+    {
+      "id": 25,
+      "name": "Convertible Laptop",
+      "price": 38000,
+      "image": "/images/convertible-laptop.jpg",
+      "desc": "2-in-1 convertible laptop with touch screen and versatile modes.",
+      "category": "Laptops"
+    },
+    {
+      "id": 26,
+      "name": "Premium Laptop",
+      "price": 80000,
+      "image": "/images/premium-laptop.jpg",
+      "desc": "Top-of-the-line laptop with high-end specifications and build quality.",
+      "category": "Laptops"
+    },
+    {
+      "id": 27,
+      "name": "Student Laptop",
+      "price": 20000,
+      "image": "/images/student-laptop.jpg",
+      "desc": "Budget-friendly laptop ideal for students and light use.",
+      "category": "Laptops"
+    },
+    {
+      "id": 28,
+      "name": "2-in-1 Laptop",
+      "price": 42000,
+      "image": "/images/2-in-1-laptop.jpg",
+      "desc": "Flexible 2-in-1 laptop with detachable keyboard and touchscreen.",
+      "category": "Laptops"
+    },
+    {
+      "id": 29,
+      "name": "Media Laptop",
+      "price": 60000,
+      "image": "/images/media-laptop.jpg",
+      "desc": "Laptop designed for media consumption with high-resolution display.",
+      "category": "Laptops"
+    },
+    {
+      "id": 30,
+      "name": "High-Performance Laptop",
+      "price": 90000,
+      "image": "/images/high-performance-laptop.jpg",
+      "desc": "Ultimate high-performance laptop for demanding applications and gaming.",
+      "category": "Laptops"
+    },
+    {
+      "id": 31,
+      "name": "Face Serum",
+      "price": 7500,
+      "image": "/images/face-serum.jpg",
+      "desc": "Nourishing serum for radiant and youthful skin.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 32,
+      "name": "Moisturizing Cream",
+      "price": 6200,
+      "image": "/images/moisturizing-cream.jpg",
+      "desc": "Hydrating cream to keep your skin smooth and hydrated.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 33,
+      "name": "Lipstick",
+      "price": 3500,
+      "image": "/images/lipstick.jpg",
+      "desc": "Vibrant lipstick for a bold and stylish look.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 34,
+      "name": "Eye Shadow Palette",
+      "price": 8500,
+      "image": "/images/eye-shadow-palette.jpg",
+      "desc": "Versatile eyeshadow palette with a range of beautiful shades.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 35,
+      "name": "Facial Cleanser",
+      "price": 4000,
+      "image": "/images/facial-cleanser.jpg",
+      "desc": "Gentle cleanser to remove impurities and refresh your skin.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 36,
+      "name": "Nail Polish Set",
+      "price": 5000,
+      "image": "/images/nail-polish-set.jpg",
+      "desc": "Colorful nail polish set for stylish and trendy nails.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 37,
+      "name": "Anti-Aging Cream",
+      "price": 15000,
+      "image": "/images/anti-aging-cream.jpg",
+      "desc": "Rich cream designed to reduce signs of aging and improve skin texture.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 38,
+      "name": "Perfume",
+      "price": 22000,
+      "image": "/images/perfume.jpg",
+      "desc": "Luxurious fragrance that leaves a lasting impression.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 39,
+      "name": "Hair Serum",
+      "price": 7000,
+      "image": "/images/hair-serum.jpg",
+      "desc": "Revitalizing serum to enhance hair shine and reduce frizz.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 40,
+      "name": "Body Lotion",
+      "price": 6000,
+      "image": "/images/body-lotion.jpg",
+      "desc": "Moisturizing body lotion to keep your skin soft and smooth all day.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 41,
+      "name": "Floral Dress",
+      "price": 22000,
+      "image": "/images/floral-dress.jpg",
+      "desc": "Elegant floral dress perfect for any occasion.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 42,
+      "name": "Denim Jacket",
+      "price": 25000,
+      "image": "/images/denim-jacket.jpg",
+      "desc": "Classic denim jacket with a timeless style.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 43,
+      "name": "Blouse",
+      "price": 18000,
+      "image": "/images/blouse.jpg",
+      "desc": "Chic blouse with a flattering fit for both work and casual wear.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 44,
+      "name": "Midi Skirt",
+      "price": 20000,
+      "image": "/images/midi-skirt.jpg",
+      "desc": "Stylish midi skirt that combines comfort with sophistication.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 45,
+      "name": "Sweater Dress",
+      "price": 30000,
+      "image": "/images/sweater-dress.jpg",
+      "desc": "Cozy sweater dress for a warm and fashionable look.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 46,
+      "name": "High-Waisted Pants",
+      "price": 27000,
+      "image": "/images/high-waisted-pants.jpg",
+      "desc": "Trendy high-waisted pants that accentuate your silhouette.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 47,
+      "name": "Wrap Dress",
+      "price": 35000,
+      "image": "/images/wrap-dress.jpg",
+      "desc": "Flattering wrap dress suitable for both formal and casual events.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 48,
+      "name": "Tailored Blazer",
+      "price": 40000,
+      "image": "/images/tailored-blazer.jpg",
+      "desc": "Sophisticated tailored blazer for a sharp and professional look.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 49,
+      "name": "Jumpsuit",
+      "price": 32000,
+      "image": "/images/jumpsuit.jpg",
+      "desc": "Versatile jumpsuit that combines style and comfort.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 50,
+      "name": "Casual Tee",
+      "price": 15000,
+      "image": "/images/casual-tee.jpg",
+      "desc": "Comfortable casual tee for everyday wear.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 71,
+      "name": "Gold Necklace",
+      "price": 35000,
+      "image": "/images/gold-necklace.jpg",
+      "desc": "Elegant gold necklace with a timeless design, perfect for special occasions.",
+      "category": "Accessories"
+    },
+    {
+      "id": 72,
+      "name": "Diamond Earrings",
+      "price": 55000,
+      "image": "/images/diamond-earrings.jpg",
+      "desc": "Stunning diamond earrings that add sparkle and sophistication.",
+      "category": "Accessories"
+    },
+    {
+      "id": 73,
+      "name": "Silver Bracelet",
+      "price": 20000,
+      "image": "/images/silver-bracelet.jpg",
+      "desc": "Stylish silver bracelet with a modern and versatile design.",
+      "category": "Accessories"
+    },
+    {
+      "id": 74,
+      "name": "Pearl Pendant",
+      "price": 15000,
+      "image": "/images/pearl-pendant.jpg",
+      "desc": "Graceful pearl pendant necklace with a classic appeal.",
+      "category": "Accessories"
+    },
+    {
+      "id": 75,
+      "name": "Sapphire Ring",
+      "price": 40000,
+      "image": "/images/sapphire-ring.jpg",
+      "desc": "Exquisite sapphire ring with a rich blue hue and elegant setting.",
+      "category": "Accessories"
+    },
+    {
+      "id": 76,
+      "name": "Rose Gold Watch",
+      "price": 60000,
+      "image": "/images/rose-gold-watch.jpg",
+      "desc": "Luxurious rose gold watch with a sophisticated design and precise timekeeping.",
+      "category": "Accessories"
+    },
+    {
+      "id": 77,
+      "name": "Emerald Earrings",
+      "price": 30000,
+      "image": "/images/emerald-earrings.jpg",
+      "desc": "Beautiful emerald earrings that provide a pop of color and elegance.",
+      "category": "Accessories"
+    },
+    {
+      "id": 78,
+      "name": "Diamond Bracelet",
+      "price": 50000,
+      "image": "/images/diamond-bracelet.jpg",
+      "desc": "Charming diamond bracelet with a dazzling array of stones.",
+      "category": "Accessories"
+    },
+    {
+      "id": 79,
+      "name": "Gold Cufflinks",
+      "price": 18000,
+      "image": "/images/gold-cufflinks.jpg",
+      "desc": "Sophisticated gold cufflinks that add a touch of class to formal attire.",
+      "category": "Accessories"
+    },
+    {
+      "id": 80,
+      "name": "Crystal Brooch",
+      "price": 12000,
+      "image": "/images/crystal-brooch.jpg",
+      "desc": "Elegant crystal brooch that enhances any outfit with a touch of sparkle.",
+      "category": "Accessories"
+    }
+  ]
+}

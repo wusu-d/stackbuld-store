@@ -1,0 +1,484 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "T-Shirt",
+      "price": 15000,
+      "image": "https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Comfortable and stylish t-shirt for everyday wear.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 2,
+      "name": "Hoodie",
+      "price": 22000,
+      "image": "https://images.pexels.com/photos/1172207/pexels-photo-1172207.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Warm and cozy hoodie for cooler days.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 3,
+      "name": "Jeans",
+      "price": 32000,
+      "image": "https://images.pexels.com/photos/7389041/pexels-photo-7389041.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Classic denim jeans with a modern fit.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 4,
+      "name": "Jerseys",
+      "price": 27000,
+      "image": "https://images.pexels.com/photos/23947835/pexels-photo-23947835/free-photo-of-couple-posing-in-football-jerseys.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "rep your favorite club.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 5,
+      "name": "Chinos",
+      "price": 29000,
+      "image": "https://images.pexels.com/photos/1670770/pexels-photo-1670770.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Versatile chinos suitable for both casual and semi-formal wear.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 6,
+      "name": "Men's Jacket",
+      "price": 35000,
+      "image": "https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Stylish jacket to keep you warm and trendy.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 7,
+      "name": "Polo Shirt",
+      "price": 18000,
+      "image": "https://images.pexels.com/photos/2096476/pexels-photo-2096476.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Casual polo shirt with a comfortable fit.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 8,
+      "name": "Men's Sweater",
+      "price": 25000,
+      "image": "https://images.pexels.com/photos/27330663/pexels-photo-27330663/free-photo-of-a-man-in-glasses-leaning-against-a-railing.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Soft and warm sweater for layering.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 9,
+      "name": "Men's Shorts",
+      "price": 16000,
+      "image": "https://images.pexels.com/photos/5158263/pexels-photo-5158263.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Casual shorts ideal for hot weather.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 10,
+      "name": "Suit",
+      "price": 49000,
+      "image": "https://images.pexels.com/photos/1300550/pexels-photo-1300550.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Elegant suit for formal and professional settings.",
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 11,
+      "name": "Smartphone",
+      "price": 45000,
+      "image": "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "High-performance smartphone with a sleek design.",
+      "category": "Electronics"
+    },
+    {
+      "id": 12,
+      "name": "Home Theatres",
+      "price": 75000,
+      "image": "https://images.pexels.com/photos/706144/pexels-photo-706144.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Powerful laptop suitable for work and play.",
+      "category": "Electronics"
+    },
+    {
+      "id": 13,
+      "name": "Headphones",
+      "price": 22000,
+      "image": "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Noise-canceling headphones for an immersive experience.",
+      "category": "Electronics"
+    },
+    {
+      "id": 14,
+      "name": "Smartwatch",
+      "price": 32000,
+      "image": "https://images.pexels.com/photos/1682821/pexels-photo-1682821.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Stylish smartwatch with fitness tracking features.",
+      "category": "Electronics"
+    },
+    {
+      "id": 15,
+      "name": "Tablet",
+      "price": 35000,
+      "image": "https://images.pexels.com/photos/40739/mobile-phone-smartphone-tablet-white-40739.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Versatile tablet with a high-resolution display.",
+      "category": "Electronics"
+    },
+    {
+      "id": 16,
+      "name": "Bluetooth Speaker",
+      "price": 28000,
+      "image": "https://images.pexels.com/photos/1279365/pexels-photo-1279365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Portable speaker with excellent sound quality.",
+      "category": "Electronics"
+    },
+    {
+      "id": 17,
+      "name": "Digital Camera",
+      "price": 65000,
+      "image": "https://images.pexels.com/photos/1528851/pexels-photo-1528851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "High-resolution camera for capturing stunning photos.",
+      "category": "Electronics"
+    },
+    {
+      "id": 18,
+      "name": "Smart TV",
+      "price": 90000,
+      "image": "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Large smart TV with 4K resolution and streaming capabilities.",
+      "category": "Electronics"
+    },
+    {
+      "id": 19,
+      "name": "Gaming Console",
+      "price": 55000,
+      "image": "https://images.pexels.com/photos/4219883/pexels-photo-4219883.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Next-gen gaming console with advanced features.",
+      "category": "Electronics"
+    },
+    {
+      "id": 20,
+      "name": "External Hard Drive",
+      "price": 24000,
+      "image": "https://images.pexels.com/photos/117729/pexels-photo-117729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Reliable external hard drive for extra storage space.",
+      "category": "Electronics"
+    },
+    {
+      "id": 21,
+      "name": "Basic Laptop",
+      "price": 12000,
+      "image": "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Affordable laptop for everyday tasks and basic computing.",
+      "category": "Laptops"
+    },
+    {
+      "id": 22,
+      "name": "Ultrabook",
+      "price": 45000,
+      "image": "https://images.pexels.com/photos/38568/apple-imac-ipad-workplace-38568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Lightweight ultrabook with long battery life and fast performance.",
+      "category": "Laptops"
+    },
+    {
+      "id": 23,
+      "name": "Gaming Laptop",
+      "price": 75000,
+      "image": "https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "High-performance gaming laptop with advanced graphics capabilities.",
+      "category": "Laptops"
+    },
+    {
+      "id": 24,
+      "name": "Business Laptop",
+      "price": 55000,
+      "image": "https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Robust business laptop with enhanced security features.",
+      "category": "Laptops"
+    },
+    {
+      "id": 25,
+      "name": "Convertible Laptop",
+      "price": 38000,
+      "image": "https://images.pexels.com/photos/4261785/pexels-photo-4261785.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "2-in-1 convertible laptop with touch screen and versatile modes.",
+      "category": "Laptops"
+    },
+    {
+      "id": 26,
+      "name": "Premium Laptop",
+      "price": 80000,
+      "image": "https://images.pexels.com/photos/331684/pexels-photo-331684.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Top-of-the-line laptop with high-end specifications and build quality.",
+      "category": "Laptops"
+    },
+    {
+      "id": 27,
+      "name": "Student Laptop",
+      "price": 20000,
+      "image": "https://images.pexels.com/photos/826349/pexels-photo-826349.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Budget-friendly laptop ideal for students and light use.",
+      "category": "Laptops"
+    },
+    {
+      "id": 28,
+      "name": "2-in-1 Laptop",
+      "price": 42000,
+      "image": "https://images.pexels.com/photos/461064/pexels-photo-461064.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Flexible 2-in-1 laptop with detachable keyboard and touchscreen.",
+      "category": "Laptops"
+    },
+    {
+      "id": 29,
+      "name": "Media Laptop",
+      "price": 60000,
+      "image": "https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Laptop designed for media consumption with high-resolution display.",
+      "category": "Laptops"
+    },
+    {
+      "id": 30,
+      "name": "High-Performance Laptop",
+      "price": 90000,
+      "image": "https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Ultimate high-performance laptop for demanding applications and gaming.",
+      "category": "Laptops"
+    },
+    {
+      "id": 31,
+      "name": "Face Serum",
+      "price": 7500,
+      "image": "https://images.pexels.com/photos/8140898/pexels-photo-8140898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Nourishing serum for radiant and youthful skin.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 32,
+      "name": "Moisturizing Cream",
+      "price": 6200,
+      "image": "https://images.pexels.com/photos/5797999/pexels-photo-5797999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Hydrating cream to keep your skin smooth and hydrated.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 33,
+      "name": "Lipstick",
+      "price": 3500,
+      "image": "https://images.pexels.com/photos/1377034/pexels-photo-1377034.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Vibrant lipstick for a bold and stylish look.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 34,
+      "name": "Eye Shadow Palette",
+      "price": 8500,
+      "image": "https://images.pexels.com/photos/3059639/pexels-photo-3059639.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Versatile eyeshadow palette with a range of beautiful shades.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 35,
+      "name": "Facial Cleanser",
+      "price": 4000,
+      "image": "https://images.pexels.com/photos/11179695/pexels-photo-11179695.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Gentle cleanser to remove impurities and refresh your skin.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 36,
+      "name": "Nail Polish Set",
+      "price": 5000,
+      "image": "https://images.pexels.com/photos/1373748/pexels-photo-1373748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Colorful nail polish set for stylish and trendy nails.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 37,
+      "name": "Anti-Aging Cream",
+      "price": 15000,
+      "image": "https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Rich cream designed to reduce signs of aging and improve skin texture.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 38,
+      "name": "Perfume",
+      "price": 22000,
+      "image": "https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Luxurious fragrance that leaves a lasting impression.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 39,
+      "name": "Hair Serum",
+      "price": 7000,
+      "image": "https://images.pexels.com/photos/7449900/pexels-photo-7449900.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Revitalizing serum to enhance hair shine and reduce frizz.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 40,
+      "name": "Body Lotion",
+      "price": 6000,
+      "image": "https://images.pexels.com/photos/1029896/pexels-photo-1029896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Moisturizing body lotion to keep your skin soft and smooth all day.",
+      "category": "Beauty Products"
+    },
+    {
+      "id": 41,
+      "name": "Floral Dress",
+      "price": 22000,
+      "image": "https://images.pexels.com/photos/27081781/pexels-photo-27081781/free-photo-of-processed-with-vsco-with-m3-preset.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Elegant floral dress perfect for any occasion.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 42,
+      "name": "Denim Jacket",
+      "price": 25000,
+      "image": "https://images.pexels.com/photos/27785717/pexels-photo-27785717/free-photo-of-a-woman-in-sunglasses-and-a-denim-jacket.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Classic denim jacket with a timeless style.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 43,
+      "name": "Blouse",
+      "price": 18000,
+      "image": "https://images.pexels.com/photos/3302595/pexels-photo-3302595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Chic blouse with a flattering fit for both work and casual wear.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 44,
+      "name": "Midi Skirt",
+      "price": 20000,
+      "image": "https://images.pexels.com/photos/12077079/pexels-photo-12077079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Stylish midi skirt that combines comfort with sophistication.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 45,
+      "name": "Sweater Dress",
+      "price": 30000,
+      "image": "https://images.pexels.com/photos/1374128/pexels-photo-1374128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Cozy sweater dress for a warm and fashionable look.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 46,
+      "name": "High-Waisted Pants",
+      "price": 27000,
+      "image": "https://images.pexels.com/photos/13449601/pexels-photo-13449601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Trendy high-waisted pants that accentuate your silhouette.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 47,
+      "name": "Wrap Dress",
+      "price": 35000,
+      "image": "https://images.pexels.com/photos/17893405/pexels-photo-17893405/free-photo-of-woman-in-red-wrap-dress-standing-on-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Flattering wrap dress suitable for both formal and casual events.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 48,
+      "name": "Tailored Blazer",
+      "price": 40000,
+      "image": "https://images.pexels.com/photos/27936155/pexels-photo-27936155/free-photo-of-elegant-woman-sitting-on-bench-in-park.png?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Sophisticated tailored blazer for a sharp and professional look.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 49,
+      "name": "Jumpsuit",
+      "price": 32000,
+      "image": "https://images.pexels.com/photos/1309373/pexels-photo-1309373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Versatile jumpsuit that combines style and comfort.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 50,
+      "name": "Casual Tee",
+      "price": 15000,
+      "image": "https://images.pexels.com/photos/23525780/pexels-photo-23525780/free-photo-of-a-woman-in-the-forest.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Comfortable casual tee for everyday wear.",
+      "category": "Women's Fashion"
+    },
+    {
+      "id": 71,
+      "name": "Gold Necklace",
+      "price": 35000,
+      "image": "https://images.pexels.com/photos/860009/pexels-photo-860009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Elegant gold necklace with a timeless design, perfect for special occasions.",
+      "category": "Accessories"
+    },
+    {
+      "id": 72,
+      "name": "Diamond Earrings",
+      "price": 55000,
+      "image": "https://images.pexels.com/photos/6046165/pexels-photo-6046165.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Stunning diamond earrings that add sparkle and sophistication.",
+      "category": "Accessories"
+    },
+    {
+      "id": 73,
+      "name": "Silver Bracelet",
+      "price": 20000,
+      "image": "https://images.pexels.com/photos/6626751/pexels-photo-6626751.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Stylish silver bracelet with a modern and versatile design.",
+      "category": "Accessories"
+    },
+    {
+      "id": 74,
+      "name": "Pearl Pendant",
+      "price": 15000,
+      "image": "https://images.pexels.com/photos/6154083/pexels-photo-6154083.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Graceful pearl pendant necklace with a classic appeal.",
+      "category": "Accessories"
+    },
+    {
+      "id": 75,
+      "name": "Sapphire Ring",
+      "price": 40000,
+      "image": "https://images.pexels.com/photos/14058109/pexels-photo-14058109.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Exquisite sapphire ring with a rich blue hue and elegant setting.",
+      "category": "Accessories"
+    },
+    {
+      "id": 76,
+      "name": "Rose Gold Watch",
+      "price": 60000,
+      "image": "https://images.pexels.com/photos/12936607/pexels-photo-12936607.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Luxurious rose gold watch with a sophisticated design and precise timekeeping.",
+      "category": "Accessories"
+    },
+    {
+      "id": 77,
+      "name": "Emerald Earrings",
+      "price": 30000,
+      "image": "https://images.pexels.com/photos/17298631/pexels-photo-17298631/free-photo-of-earring-with-diamonds-and-emeralds.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Beautiful emerald earrings that provide a pop of color and elegance.",
+      "category": "Accessories"
+    },
+    {
+      "id": 78,
+      "name": "Diamond Bracelet",
+      "price": 50000,
+      "image": "https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "desc": "Charming diamond bracelet with a dazzling array of stones.",
+      "category": "Accessories"
+    },
+    {
+      "id": 79,
+      "name": "Gold Cufflinks",
+      "price": 18000,
+      "image": "https://images.pexels.com/photos/5732687/pexels-photo-5732687.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Sophisticated gold cufflinks that add a touch of class to formal attire.",
+      "category": "Accessories"
+    },
+    {
+      "id": 80,
+      "name": "Crystal Brooch",
+      "price": 12000,
+      "image": "https://images.pexels.com/photos/10361482/pexels-photo-10361482.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "desc": "Elegant crystal brooch that enhances any outfit with a touch of sparkle.",
+      "category": "Accessories"
+    }
+  ]
+}
