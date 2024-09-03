@@ -10,10 +10,7 @@ const ProductListItem: React.FC<{
   image: string;
 }> = ({ name, desc, price, id, image }) => {
   return (
-    <Link
-      href={`/category/${id.toString()}`}
-      className="space-y-1 cursor-pointer "
-    >
+    <Link href={`/category/${id}`} className="space-y-1 cursor-pointer ">
       <div className="h-40 bg-slate-400 relative">
         <Image src={image} className="object-cover" fill alt="" />
       </div>

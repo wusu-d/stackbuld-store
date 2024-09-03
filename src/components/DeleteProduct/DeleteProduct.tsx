@@ -3,14 +3,16 @@ import { useState } from "react";
 import { CircleX, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Modal from "../Modal/Modal";
-import { revalidateTag } from "next/cache";
-import revalidate from "@/helper/revalidateTag";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const DeleteProduct = ({ id }: { id: string }) => {
-  const { back } = useRouter();
+  const { push } = useRouter();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const openModal = () => setIsOpen(true);
+  const openModal = () => {
+    setIsOpen(true);
+  };
   const closeModal = () => setIsOpen(false);
 
   const handleConfirm = async () => {
@@ -35,13 +37,28 @@ const DeleteProduct = ({ id }: { id: string }) => {
     } finally {
       setIsLoading(false);
     }
-    revalidate("fetchProducts");
-    back();
-    closeModal();
+    // revalidate("fetchProducts");
+    setTimeout(() => {
+      push("/category");
+      closeModal();
+      toast("Deleted Successfully");
+    }, 1000);
   };
 
   return (
     <>
+      <ToastContainer
+        position="top-right"
+        autoClose={1000}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <button className="rounded-md px-4 bg-red-600" onClick={openModal}>
         <Trash2 className="h-5 w-5 text-white" />
       </button>

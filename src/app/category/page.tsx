@@ -13,7 +13,7 @@ const CategoryPage = async ({ searchParams }: { searchParams: any }) => {
   const urlParams = new URLSearchParams(searchParams);
 
   let data = await fetch(`${process.env.URL}/api/category?${urlParams}`, {
-    next: { revalidate: 0, tags: ["fetchProducts"] },
+    cache: "no-cache",
   });
   let { products, currentPage, totalPages, totalItems } = await data.json();
 

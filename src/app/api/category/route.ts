@@ -1,17 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
+import { addProduct, deleteProduct, editProduct, getProducts } from "@/data";
 
-import data from "@/data.json";
-import { NextApiRequest } from "next";
-import fs from "fs";
-import path from "path";
-import { log } from "console";
-
-const db = {
-  products: data.products,
-  setProducts: function (data: any) {
-    this.products = data;
-  },
-};
+// const db = {
+//   products: data.products,
+//   setProducts: function (data: any) {
+//     this.products = data;
+//   },
+// };
 
 export async function GET(request: NextRequest) {
   console.log(request.url);
@@ -20,7 +15,7 @@ export async function GET(request: NextRequest) {
   const max = request.nextUrl.searchParams.get("max") as string;
   const page = parseInt(request.nextUrl.searchParams.get("page") || "1", 10);
   const limit = parseInt(request.nextUrl.searchParams.get("limit") || "8", 10);
-  const products = db.products;
+  const products = getProducts();
   let filteredProducts = [...products];
 
   if (category && category.toLowerCase() !== "all") {
@@ -80,22 +75,9 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
-    // Path to your JSON file
-    const filePath = path.join(process.cwd(), "data", "myData.json");
-    console.log(filePath);
-    // Read the existing JSON file
-    // const jsonData = JSON.parse(fs.readFileSync(filePath, 'utf8'))
     const product = await request.json();
-    const newProduct = {
-      id: db.products?.length ? db.products[db.products.length - 1].id + 1 : 1,
-      image:
-        "https://images.pexels.com/photos/7897470/pexels-photo-7897470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      name: product.name,
-      price: product.price,
-      desc: product.description,
-      category: product.category,
-    };
-    db.setProducts([...db.products, newProduct]);
+
+    const newProduct = addProduct(product);
 
     return NextResponse.json(newProduct);
   } catch (error) {
@@ -106,45 +88,20 @@ export async function POST(request: NextRequest) {
 export async function PUT(request: NextRequest) {
   try {
     const product = await request.json();
-    const foundProduct = db.products.find(
-      (prod) => prod.id === parseInt(product.id)
-    );
-    if (!foundProduct) {
-      return NextResponse.json({
-        message: `Product ID ${product.id} not found`,
-      });
-    }
-    if (product.name) foundProduct.name = product.name;
-    if (product.price) foundProduct.price = product.price;
-    if (product.description) foundProduct.desc = product.description;
-    const filteredArray = db.products.filter(
-      (emp) => emp.id !== parseInt(product.id)
-    );
-    const unsortedArray = [...filteredArray, foundProduct];
-    db.setProducts(
-      unsortedArray.sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0))
-    );
-    return NextResponse.json(db.products);
-  } catch (error) {}
+    const products = editProduct(product);
+    return NextResponse.json(products);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 export async function DELETE(request: NextRequest) {
   try {
     const product = await request.json();
-    const foundProduct = db.products.find(
-      (prod) => prod.id === parseInt(product.id)
-    );
-    if (!foundProduct) {
-      return NextResponse.json({
-        message: `Product ${product.id} not found`,
-      });
-    }
-    const filteredArray = db.products.filter(
-      (prod) => prod.id !== parseInt(product.id)
-    );
-    db.setProducts([...filteredArray]);
-    return NextResponse.json(db.products);
+    const products = deleteProduct(product);
+    return NextResponse.json(products);
   } catch (error) {
+    return NextResponse.json(error);
     console.log(error);
   }
 }
