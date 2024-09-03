@@ -5,6 +5,7 @@ import Modal from "../Modal/Modal";
 import { BookmarkPlus, CircleX } from "lucide-react";
 import { useRouter } from "next/navigation";
 import revalidate from "@/helper/revalidateTag";
+import Spinner from "../Spinner/Spinner";
 
 type FormData = {
   name: string;
@@ -55,7 +56,11 @@ const AddProduct = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:3000/api/category", {
+      const url =
+        process.env.NODE_ENV === "development"
+          ? "http://localhost:3000"
+          : process.env.URL;
+      const response = await fetch(`${url}/api/category`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -72,7 +77,7 @@ const AddProduct = () => {
 
       const newProduct = await response.json();
       console.log(newProduct);
-      revalidate("fetchProducts");
+
       // Reset form
       setFormData({
         name: "",
@@ -85,7 +90,6 @@ const AddProduct = () => {
     } finally {
       setIsLoading(false);
     }
-
     refresh();
     closeModal();
   };
@@ -174,9 +178,9 @@ const AddProduct = () => {
           </div>
           <button
             type="submit"
-            className="w-full py-2 rounded-md bg-slate-500 font-bold mt-4"
+            className="w-full py-2 rounded-md bg-slate-500 font-bold mt-4 flex justify-center items-center gap-2"
           >
-            Add Product
+            {isLoading && <Spinner />} Add Product
           </button>
         </form>
       </Modal>

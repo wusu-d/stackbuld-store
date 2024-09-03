@@ -43,19 +43,29 @@ const EditProduct = ({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    console.log();
+
     // console.log(formData);
 
     setIsLoading(true);
     try {
-      const response = await fetch("http://localhost:3000/api/category", {
+      const url =
+        process.env.NODE_ENV === "development"
+          ? "http://localhost:3000"
+          : process.env.URL;
+      const response = await fetch(`${url}/api/category`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ id, ...formData }),
+        body: JSON.stringify({
+          id,
+          ...formData,
+          price: parseInt(formData.price),
+        }),
       });
 
-      if (!response.ok) {
+      if (response.ok) {
         throw new Error("Failed to edit product");
       }
 
@@ -67,8 +77,10 @@ const EditProduct = ({
     } finally {
       setIsLoading(false);
     }
-    refresh();
-    closeModal();
+    setTimeout(() => {
+      refresh();
+      closeModal();
+    }, 1000);
   };
   return (
     <>
@@ -133,7 +145,7 @@ const EditProduct = ({
           </div>
           <button
             type="submit"
-            className="w-full py-2 rounded-md bg-slate-500 font-bold mt-4 flex items-center gap-2"
+            className="w-full py-2 rounded-md bg-slate-500 font-bold mt-4 flex justify-center items-center gap-2"
           >
             {isLoading && <Spinner />} Edit Product
           </button>

@@ -20,7 +20,11 @@ const DeleteProduct = ({ id }: { id: string }) => {
   const handleConfirm = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("http://localhost:3000/api/category", {
+      const url =
+        process.env.NODE_ENV === "development"
+          ? "http://localhost:3000"
+          : process.env.URL;
+      const response = await fetch(`${url}/api/category`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -70,7 +74,7 @@ const DeleteProduct = ({ id }: { id: string }) => {
             <CircleX className="w-5 h-5 cursor-pointer" onClick={closeModal} />
           </h1>
           <p className="text-sm mt-2">This action can&apos;t be reversed</p>
-          <div className="mt-4 space-x-4">
+          <div className="mt-4 space-x-4 flex items-center">
             <button
               onClick={closeModal}
               className="py-2 px-3 font-bold bg-slate-200 rounded-md"
@@ -79,7 +83,7 @@ const DeleteProduct = ({ id }: { id: string }) => {
             </button>
             <button
               onClick={handleConfirm}
-              className="py-2 px-3 font-bold bg-orange-500 rounded-md flex items-center gap-2"
+              className="py-2 px-3 font-bold bg-orange-500 rounded-md flex justify-center items-center gap-2"
             >
               {isLoading && <Spinner />} Confirm
             </button>

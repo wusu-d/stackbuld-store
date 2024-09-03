@@ -11,7 +11,6 @@ export async function GET(request: NextRequest) {
   try {
     await connectDB();
     let filteredProducts = await ProductModel.find({});
-    console.log(filteredProducts);
     if (category && category.toLowerCase() !== "all") {
       filteredProducts = filteredProducts.filter(
         (products) => products.category.toLowerCase() === category.toLowerCase()
@@ -73,12 +72,21 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   const product = await request.json();
+  const newProduct = {
+    image:
+      "https://images.pexels.com/photos/7897470/pexels-photo-7897470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: product.name,
+    price: product.price,
+    desc: product.description,
+    category: product.category,
+  };
   try {
     await connectDB();
-    const newProduct = await ProductModel.create(product);
-    console.log(product);
 
-    return NextResponse.json(newProduct);
+    const createdProduct = await ProductModel.create(newProduct);
+    console.log(createdProduct);
+
+    return NextResponse.json(createdProduct);
   } catch (error) {
     console.log(error);
   }
