@@ -23,7 +23,7 @@ const DeleteProduct = ({ id }: { id: string }) => {
       const url =
         process.env.NODE_ENV === "development"
           ? "http://localhost:3000"
-          : process.env.URL;
+          : "https://stackbuld-store.vercel.app";
       const response = await fetch(`${url}/api/category`, {
         method: "DELETE",
         headers: {
