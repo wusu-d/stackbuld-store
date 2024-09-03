@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { CircleX, ShoppingCart } from "lucide-react";
 import Modal from "../Modal/Modal";
+import Spinner from "../Spinner/Spinner";
 
 type FormData = {
   name: string;
@@ -59,6 +60,7 @@ const EditProduct = ({
       }
 
       const data = await response.json();
+
       console.log(data);
     } catch (error) {
       console.log(error);
@@ -131,9 +133,9 @@ const EditProduct = ({
           </div>
           <button
             type="submit"
-            className="w-full py-2 rounded-md bg-slate-500 font-bold mt-4"
+            className="w-full py-2 rounded-md bg-slate-500 font-bold mt-4 flex items-center gap-2"
           >
-            Edit Product
+            {isLoading && <Spinner />} Edit Product
           </button>
         </form>
       </Modal>

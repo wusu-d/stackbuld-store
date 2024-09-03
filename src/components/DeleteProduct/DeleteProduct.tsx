@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import Modal from "../Modal/Modal";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { navigate } from "@/helper/redirect";
+import Spinner from "../Spinner/Spinner";
 
 const DeleteProduct = ({ id }: { id: string }) => {
   const { push } = useRouter();
@@ -38,18 +40,17 @@ const DeleteProduct = ({ id }: { id: string }) => {
       setIsLoading(false);
     }
     // revalidate("fetchProducts");
-    setTimeout(() => {
-      push("/category");
-      closeModal();
-      toast("Deleted Successfully");
-    }, 1000);
+
+    closeModal();
+    toast("Deleted Successfully");
+    navigate();
   };
 
   return (
     <>
       <ToastContainer
         position="top-right"
-        autoClose={1000}
+        autoClose={5000}
         hideProgressBar
         newestOnTop={false}
         closeOnClick
@@ -78,9 +79,9 @@ const DeleteProduct = ({ id }: { id: string }) => {
             </button>
             <button
               onClick={handleConfirm}
-              className="py-2 px-3 font-bold bg-orange-500 rounded-md"
+              className="py-2 px-3 font-bold bg-orange-500 rounded-md flex items-center gap-2"
             >
-              Confirm
+              {isLoading && <Spinner />} Confirm
             </button>
           </div>
         </div>

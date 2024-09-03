@@ -40,8 +40,8 @@ const CategoryPage = async ({ searchParams }: { searchParams: any }) => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-6 min-h-[480px]">
                 {products.map((product: any) => (
                   <ProductListItem
-                    key={product.id}
-                    id={product.id}
+                    key={product._id}
+                    id={product._id}
                     name={product.name}
                     desc={product.desc}
                     price={product.price}

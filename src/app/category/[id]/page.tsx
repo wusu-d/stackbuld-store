@@ -5,13 +5,24 @@ import DeleteProduct from "@/components/DeleteProduct/DeleteProduct";
 import EditProduct from "@/components/EditProduct/EditProduct";
 import NavigationText from "@/components/NavigationText/NavigationText";
 import formatToCurrency from "@/helper/formatNumber";
+import { navigate } from "@/helper/redirect";
+import { notFound } from "next/navigation";
 
-const ProductPage = async ({ params }: { params: { id: string } }) => {
-  const response = await fetch(`${process.env.URL}/api/category/${params.id}`, {
+const getProduct = async (id: any) => {
+  const response = await fetch(`${process.env.URL}/api/category/${id}`, {
     next: { revalidate: 0 },
   });
-  const [product] = await response.json();
+  if (!response.ok) {
+    return undefined;
+  }
+  return response.json();
+};
 
+const ProductPage = async ({ params }: { params: { id: string } }) => {
+  const product = await getProduct(params.id);
+  if (!product) {
+    notFound();
+  }
   return (
     <main>
       <div className="max-w-6xl border-t-2 border-orange-500 mx-auto px-4 md:px-20">
